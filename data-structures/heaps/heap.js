@@ -3,8 +3,10 @@
  */
 
 class MinHeap {
-  constructor() {
+  // comparator(a, b) should return negative if a < b (a has higher priority)
+  constructor(comparator = (a, b) => a - b) {
     this.heap = [];
+    this.comparator = comparator;
   }
 
   // ── Helper: Index calculations ────────────────────────────
@@ -24,7 +26,7 @@ class MinHeap {
   }
 
   _bubbleUp(i) {
-    while (i > 0 && this.heap[this.parent(i)] > this.heap[i]) {
+    while (i > 0 && this.comparator(this.heap[this.parent(i)], this.heap[i]) > 0) {
       this.swap(i, this.parent(i));
       i = this.parent(i);
     }
@@ -47,8 +49,8 @@ class MinHeap {
     const left  = this.leftChild(i);
     const right = this.rightChild(i);
 
-    if (left  < n && this.heap[left]  < this.heap[smallest]) smallest = left;
-    if (right < n && this.heap[right] < this.heap[smallest]) smallest = right;
+    if (left  < n && this.comparator(this.heap[left],  this.heap[smallest]) < 0) smallest = left;
+    if (right < n && this.comparator(this.heap[right], this.heap[smallest]) < 0) smallest = right;
 
     if (smallest !== i) {
       this.swap(i, smallest);
@@ -94,8 +96,8 @@ function topKFrequent(nums, k) {
   for (const num of nums) freq.set(num, (freq.get(num) || 0) + 1);
 
   // Use min-heap of size k based on frequency
-  // Store [frequency, value] pairs
-  const heap = new MinHeap();
+  // Store [frequency, value] pairs — comparator orders by frequency (first element)
+  const heap = new MinHeap((a, b) => a[0] - b[0]);
 
   for (const [num, count] of freq) {
     heap.insert([count, num]);
@@ -113,8 +115,8 @@ function topKFrequent(nums, k) {
 // Time: O(n log k), Space: O(k)
 // ============================================================
 function mergeKSortedArrays(arrays) {
-  // Simple approach using min-heap
-  const heap = new MinHeap();
+  // Simple approach using min-heap; comparator orders by value (first element)
+  const heap = new MinHeap((a, b) => a[0] - b[0]);
   const result = [];
 
   // Insert first element from each array with tracking info

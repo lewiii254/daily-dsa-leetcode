@@ -109,7 +109,7 @@ console.log('\n=== Approach Comparison (F(35)) ===');
 
 console.time('Naive');
 fibNaive(35);
-console.timeEnd('Naive'); // ~100ms
+console.timeEnd('Naive'); // significantly slower
 
 console.time('Memoized');
 fibMemo(35);

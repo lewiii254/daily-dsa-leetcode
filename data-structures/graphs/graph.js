@@ -195,7 +195,7 @@ console.log('BFS from A:', g.bfs('A'));      // A B C D E F
 console.log('DFS from A:', g.dfs('A'));      // A C E D B F
 console.log('Has path A→F:', g.hasPath('A', 'F')); // true
 console.log('Has path A→Z:', g.hasPath('A', 'Z')); // false
-console.log('Has cycle:', g.hasCycle());     // true (A-B-D-E-C-A)
+console.log('Has cycle:', g.hasCycle());     // true (A-B-D-E-C-A cycle via D-E and B-D)
 console.log('Components:', g.countComponents()); // 1
 
 // Directed acyclic graph for topological sort

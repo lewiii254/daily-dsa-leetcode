@@ -16,11 +16,12 @@ function allocateSupplies(clinics, totalSupplies) {
 // School Enrollment: Stable matching (simplified Gale-Shapley)
 function matchStudentsToSchools(students, schools) {
   const assignments = new Map(); // schoolId -> [studentIds]
+  const schoolMap = new Map(schools.map(s => [s.id, s])); // O(1) lookup
   schools.forEach(s => assignments.set(s.id, []));
 
   for (const student of students) {
     for (const schoolId of student.preferences) {
-      const school = schools.find(s => s.id === schoolId);
+      const school = schoolMap.get(schoolId);
       const enrolled = assignments.get(schoolId);
       if (enrolled.length < school.capacity) {
         enrolled.push(student.id);

@@ -181,5 +181,5 @@ console.log('\nPeak element in [1,2,3,1]:', findPeakElement([1,2,3,1])); // 2
 console.log('Peak element in [1,2,1,3,5,6,4]:', findPeakElement([1,2,1,3,5,6,4])); // 5
 
 console.log('\nSqrt(8):', mySqrt(8));   // 2
-console.log('Sqrt(4):', mySqrt(4));    // 2
+console.log('Sqrt(9):', mySqrt(9));    // 3
 console.log('Sqrt(16):', mySqrt(16));  // 4

@@ -25,7 +25,7 @@ class TransactionProcessor {
   }
 
   process(userId, amount) {
-    const today = new Date().toDateString();
+    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD UTC, timezone-stable
     const record = this.dailyTotals.get(userId) || { date: today, total: 0 };
     if (record.date !== today) record.total = 0; // reset daily
 
