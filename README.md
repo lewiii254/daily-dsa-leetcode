@@ -1,121 +1,130 @@
+# 🚀 DSA Mastery Kit
 
-# LeetCode DSA Practice 🚀
+> A comprehensive Data Structures & Algorithms teaching repository for developers at all levels — with a special focus on **African developers**, students, and anyone preparing for technical interviews.
 
-Daily Data Structures & Algorithms practice through LeetCode problems.
-This repository is focused on **consistency**, **pattern recognition**, and **clean solution writing**.
-
----
-
-## ✨ Why this repository?
-
-I’m building this repo to:
-- 📅 Maintain a daily problem-solving habit
-- 🧠 Strengthen core DSA fundamentals
-- ⚡ Improve coding speed and interview readiness
-- 📝 Keep readable, revisitable solutions with notes
+[![GitHub stars](https://img.shields.io/github/stars/lewiii254/daily-dsa-leetcode?style=social)](https://github.com/lewiii254/daily-dsa-leetcode)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
-## 🎯 Main Goals
+## 🎯 Who Is This For?
 
-- Solve at least **1 LeetCode problem per day**
-- Cover essential DSA patterns progressively
-- Practice both brute-force and optimized approaches
-- Improve time and space complexity awareness
-
----
-
-## 🧰 Tech Stack
-
-- **Primary:** Python
-- **Secondary (optional):** JavaScript
+- 🧑‍🎓 **CS Students** building strong foundations
+- 💼 **Job Seekers** preparing for technical interviews
+- 🌍 **African Developers** targeting companies like Safaricom, Andela, Flutterwave, and more
+- 🏋️ **Self-Learners** mastering DSA from scratch
+- 👩‍💻 **Experienced Devs** brushing up on patterns and interview techniques
 
 ---
 
-## 📈 Current Progress
+## 📚 What's Inside?
 
-- ✅ Day 1: Arrays
-- ✅ Day 2: Strings
-- ✅ Day 3: Linked List
+| Section | Description |
+|---------|-------------|
+| `fundamentals/` | Big-O, Recursion, Bit Manipulation |
+| `data-structures/` | Arrays, Lists, Trees, Graphs, Heaps, HashMaps |
+| `algorithms/` | Sorting, Searching, DP, Greedy, Backtracking |
+| `patterns/` | Sliding Window, Two Pointers, Prefix Sum |
+| `interview-prep/` | Codility, HackerRank, LeetCode, Safaricom, Andela |
+| `mock-tests/` | Timed practice tests with solutions |
+| `real-world-problems/` | Fintech, Logistics, Social Impact |
+| `cheatsheets/` | Quick reference guides |
 
-### Progress Flow
+---
 
-```mermaid
-flowchart LR
-		A[Day 1 ✅ Arrays] --> B[Day 2 ✅ Strings]
-		B --> C[Day 3 ✅ Linked List]
-		C --> D[Day 4 🔜 Stack]
-		D --> E[Day 5 🔜 Queue]
+## 🗺️ Learning Roadmap
+
+```
+Beginner → Intermediate → Advanced → Interview Ready
+    │              │             │              │
+Arrays         Trees          DP          Mock Tests
+Strings        Graphs      Greedy        Codility
+Recursion      HashMaps   Backtrack     Real-World
+Big-O          Sorting     Patterns      Safaricom
+```
+
+### Recommended Learning Path
+
+1. **Week 1–2:** `fundamentals/` → `data-structures/arrays/` → `data-structures/linked-lists/`
+2. **Week 3–4:** `data-structures/stacks/` → `data-structures/queues/` → `data-structures/hashmaps/`
+3. **Week 5–6:** `algorithms/sorting/` → `algorithms/searching/` → `patterns/`
+4. **Week 7–8:** `data-structures/trees/` → `data-structures/graphs/`
+5. **Week 9–10:** `algorithms/dynamic-programming/` → `algorithms/greedy/` → `algorithms/backtracking/`
+6. **Week 11–12:** `interview-prep/` → `mock-tests/` → `real-world-problems/`
+
+---
+
+## 🚀 How to Use This Repo
+
+```bash
+# Clone the repository
+git clone https://github.com/lewiii254/daily-dsa-leetcode.git
+
+# Navigate to a topic
+cd data-structures/arrays
+
+# Read the README for explanation
+cat README.md
+
+# Run a solution file
+node problems.js
+```
+
+### For Each Problem:
+1. 📖 Read the problem statement
+2. 💡 Study the intuition section
+3. ✍️ Try to solve it yourself first
+4. 👀 Review the solution
+5. ⏱ Analyze the complexity
+6. 🔁 Try the variations
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Quick steps:
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/add-problem-name`
+3. Add your solution following our format
+4. Submit a Pull Request
+
+---
+
+## 📬 Community
+
+- ⭐ **Star** this repo if it helps you
+- 🍴 **Fork** and solve along
+- 💬 Open **Discussions** for questions
+- 🐛 Report **Issues** for bugs or suggestions
+
+---
+
+## 🏆 Problem Format
+
+Every problem in this repo follows this format:
+
+```
+## Problem Name
+
+### 🧩 Problem
+Clear problem statement
+
+### 💡 Intuition
+Thinking process explained simply
+
+### ⚡ Solution (JavaScript)
+Clean, commented code
+
+### ⏱ Complexity
+- Time: O(...)
+- Space: O(...)
+
+### 🔁 Variations
+Related problems
 ```
 
 ---
 
-## 🗺️ Learning Roadmap (What’s Coming)
-
-The next topics I plan to focus on:
-
-- 🔜 Stack & Queue
-- 🔜 Hashing / Frequency Maps
-- 🔜 Two Pointers & Sliding Window
-- 🔜 Binary Search
-- 🔜 Recursion & Backtracking
-- 🔜 Trees & Graphs
-- 🔜 Dynamic Programming (DP)
-
-### Topic Timeline
-
-```mermaid
-timeline
-		title DSA Practice Journey
-		section Started ✅
-			Day 1 : Arrays
-			Day 2 : Strings
-			Day 3 : Linked List
-		section Next 🔜
-			Day 4-5 : Stack & Queue
-			Day 6-8 : Hashing + Two Pointers
-			Day 9-11 : Sliding Window + Binary Search
-			Day 12+ : Recursion, Trees, Graphs, DP
-```
-
----
-
-## 🧪 Daily Practice Workflow
-
-```mermaid
-flowchart TD
-		A[Pick problem of the day] --> B[Understand constraints]
-		B --> C[Write brute-force solution]
-		C --> D[Optimize approach]
-		D --> E[Analyze time & space complexity]
-		E --> F[Commit solution + notes]
-```
-
----
-
-## 📌 Problem-Solving Checklist
-
-Before moving to the next problem:
-- [ ] I understood the input/output clearly
-- [ ] I considered edge cases
-- [ ] I compared brute-force vs optimized solution
-- [ ] I recorded complexity analysis
-- [ ] I can explain the solution in simple terms
-
----
-
-## 🤝 Contribution / Follow Along
-
-If you want to follow the journey:
-- ⭐ Star the repo
-- 🍴 Fork and solve along daily
-- 💬 Open discussions on alternative approaches
-
----
-
-## 🏁 Long-Term Outcome
-
-By staying consistent, this repo should become:
-- A complete DSA revision notebook
-- An interview preparation tracker
-- A proof of disciplined daily coding practice 💪
+*Built with ❤️ for the developer community. Happy coding! 🚀*
