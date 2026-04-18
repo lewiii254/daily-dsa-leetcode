@@ -5,6 +5,9 @@ on:
   push:
     branches: [main, master]
 
+permissions:
+  contents: read
+
 jobs:
   markdown-lint-and-links:
     runs-on: ubuntu-latest
