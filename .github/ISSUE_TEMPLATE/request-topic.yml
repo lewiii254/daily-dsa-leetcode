@@ -1,0 +1,36 @@
+name: "Request a topic"
+description: Suggest a new topic, pattern, or problem set to add.
+title: "[Topic Request]: "
+labels: ["enhancement", "topic-request"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic name
+      placeholder: e.g., Monotonic Queue
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Fundamentals
+        - Data Structures
+        - Algorithms
+        - Patterns
+        - Interview Prep
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this should be added
+      description: Explain learner impact and use cases.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Helpful references (optional)
+      placeholder: Links to quality resources/problems

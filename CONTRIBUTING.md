@@ -24,23 +24,32 @@ Follow the **problem format** strictly:
 ```markdown
 ## Problem Name
 
-### 🧩 Problem
-Problem statement here...
+### 🧩 Problem Summary
+1–3 line summary of the prompt and constraints
 
-### 💡 Intuition
-Explain your thinking...
+### 💡 Approach
+Plain-English strategy
 
-### ⚡ Solution (JavaScript)
-// Clean, well-commented code
+### ✅ Why It Works
+Key invariant / reasoning
 
 ### ⏱ Complexity
 - **Time:** O(n)
 - **Space:** O(1)
 
-### 🔁 Variations
-- Related Problem 1
-- Related Problem 2
+### ⚠️ Common Pitfalls
+- Boundary errors
+- Wrong pointer/window updates
+
+### 🔍 Example Walkthroughs
+- Example 1
+- Example 2
+
+### ⚡ Solution (JavaScript)
+// Clean code
 ```
+
+You can also use the ready template: [`SOLUTION_WRITEUP_TEMPLATE.md`](SOLUTION_WRITEUP_TEMPLATE.md).
 
 ### 4. Submit a Pull Request
 - Write a clear PR title: `Add: [Problem Name] in [Section]`
@@ -53,8 +62,10 @@ Explain your thinking...
 
 - [ ] Problem follows the standard format
 - [ ] Code is in JavaScript (ES6)
-- [ ] Code is well-commented
+- [ ] Approach and “why it works” are clearly explained
 - [ ] Complexity analysis is included
+- [ ] Common pitfalls are documented
+- [ ] 1–2 walkthrough examples are included
 - [ ] No duplicate problems (check existing files)
 - [ ] README updated if adding new topic
 

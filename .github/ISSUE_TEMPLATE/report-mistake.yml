@@ -1,0 +1,36 @@
+name: "Report a mistake"
+description: Report an incorrect explanation, bug, or broken link.
+title: "[Fix Needed]: "
+labels: ["bug", "documentation"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: File or section
+      placeholder: e.g., algorithms/sliding-window/README.md
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Wrong explanation
+        - Incorrect complexity
+        - Code bug
+        - Broken link
+        - Typo/grammar
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What is currently wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it be instead?
+    validations:
+      required: true

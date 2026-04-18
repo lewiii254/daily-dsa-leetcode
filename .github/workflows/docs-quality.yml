@@ -1,0 +1,24 @@
+name: Docs Quality
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint-and-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v18
+
+      - name: Broken link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
