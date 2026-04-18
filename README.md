@@ -32,6 +32,14 @@
 
 ---
 
+## 🧭 New Here?
+
+- Start with: [`START_HERE.md`](START_HERE.md)
+- Browse everything quickly: [`INDEX.md`](INDEX.md)
+- Use the standard write-up format: [`SOLUTION_WRITEUP_TEMPLATE.md`](SOLUTION_WRITEUP_TEMPLATE.md)
+
+---
+
 ## 🗺️ Learning Roadmap
 
 ```
@@ -108,21 +116,27 @@ Every problem in this repo follows this format:
 ```
 ## Problem Name
 
-### 🧩 Problem
-Clear problem statement
+### 🧩 Problem Summary
+1–3 lines summarizing the prompt and constraints
 
-### 💡 Intuition
-Thinking process explained simply
+### 💡 Approach
+Plain-English strategy and why it is chosen
 
-### ⚡ Solution (JavaScript)
-Clean, commented code
+### ✅ Why It Works
+Key invariant / reasoning
 
 ### ⏱ Complexity
 - Time: O(...)
 - Space: O(...)
 
-### 🔁 Variations
-Related problems
+### ⚠️ Common Pitfalls
+Typical mistakes and edge cases
+
+### 🔍 Example Walkthroughs
+1–2 step-by-step examples
+
+### ⚡ Solution (JavaScript)
+Clean code implementation
 ```
 
 ---
